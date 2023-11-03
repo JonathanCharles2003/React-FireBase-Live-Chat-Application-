@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>MUCA</h1>
         <SignOut />
       </header>
 
@@ -66,7 +66,7 @@ function SignOut() {
 
 
 function ChatRoom() {
-  const dummy = useRef();
+  const dummy = useRef();//used to scroll to the bottom
   const messagesRef = collection(firestore, 'messages');
   const q = query(collection(firestore, 'messages'), orderBy('createdAt'), limit(25));
 
